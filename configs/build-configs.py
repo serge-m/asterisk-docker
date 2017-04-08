@@ -5,11 +5,11 @@ import os
 import glob
 print (os.environ)
 
-source_dir = "./etc/*"
+source_dir = "/configs/etc/*"
 destination_dir = "/etc/asterisk/"
 
-source_dir = "./etc/*"
-destination_dir = "./dst/"
+#source_dir = "./etc/*"
+#destination_dir = "./dst/"
 
 def read_content(filename):
     with open(filename, "r") as f:

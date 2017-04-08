@@ -13,7 +13,7 @@ RUN apt-get install -y python
 
 #Copy minimum configuration files so that it can start
 COPY configs/etc/* /etc/asterisk/
-COPY configs/* /configs/
+COPY configs/ /configs/
 
 RUN chown -R $ASTERISKUSER:$ASTERISKUSER /etc/asterisk
 
